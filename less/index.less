@@ -72,10 +72,18 @@ html, body {
 //variables
 @font: 40px;
 @border: .5px solid black;
+@family:'Roboto';
 
 nav{
 	.space();
-	padding: 10px 0; 
+	padding: 10px 0;
+	@media screen and(max-width: 500px){
+		nav{
+			display: flex;
+			border: 1px solid black;
+		}
+	} 
+	
 	a{
 		text-decoration: none;
 		color: grey;
@@ -85,6 +93,12 @@ nav{
 header{
 	background-color: lightsteelblue;
 	height: 40%;
+	@media (max-width: 500px){
+		nav{
+			display: flex;
+			border: 1px solid black;
+		}
+	} 
 	.title{
 		// border: 1px solid red;
 		h1{
@@ -101,6 +115,7 @@ header{
 .Introduction{
 	.space();
 	height: 20%;
+	font-family: @family;
 	.Intro{
 		width: 45%;
 		 h2{
@@ -111,6 +126,7 @@ header{
 	.Skills{
 		width: 50%;
 		.column();
+		font-family: @family;
 		h3{
 			padding: 20px 0;
 			font-size: @font;

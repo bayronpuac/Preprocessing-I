@@ -140,6 +140,12 @@ nav {
   justify-content: space-evenly;
   padding: 10px 0;
 }
+@media screen and (max-width: 500px) {
+  nav nav {
+    display: flex;
+    border: 1px solid black;
+  }
+}
 nav a {
   text-decoration: none;
   color: grey;
@@ -147,6 +153,12 @@ nav a {
 header {
   background-color: lightsteelblue;
   height: 40%;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    border: 1px solid black;
+  }
 }
 header .title h1 {
   font-size: 40px;
@@ -159,6 +171,7 @@ header .title h1 img {
   display: flex;
   justify-content: space-evenly;
   height: 20%;
+  font-family: 'Roboto';
 }
 .Introduction .Intro {
   width: 45%;
@@ -171,6 +184,7 @@ header .title h1 img {
   width: 50%;
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto';
 }
 .Introduction .Skills h3 {
   padding: 20px 0;
