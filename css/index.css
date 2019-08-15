@@ -140,15 +140,26 @@ nav {
   justify-content: space-evenly;
   padding: 10px 0;
 }
-@media screen and (max-width: 500px) {
-  nav nav {
+@media (max-width: 500px) {
+  nav {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid black;
+    padding: 0;
   }
 }
 nav a {
   text-decoration: none;
   color: grey;
+}
+@media (max-width: 500px) {
+  nav a {
+    border-bottom: 0.5px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 header {
   background-color: lightsteelblue;
@@ -160,6 +171,9 @@ header {
     border: 1px solid black;
   }
 }
+header .title {
+  border: 1px solid red;
+}
 header .title h1 {
   font-size: 40px;
 }
@@ -170,7 +184,6 @@ header .title h1 img {
 .Introduction {
   display: flex;
   justify-content: space-evenly;
-  height: 20%;
   font-family: 'Roboto';
 }
 .Introduction .Intro {
@@ -207,7 +220,7 @@ header .title h1 img {
   font-size: 40px;
 }
 .Work .WorkHistory {
-  width: 20%;
+  width: 50%;
 }
 .Work .WorkHistory p {
   font-size: 20px;
