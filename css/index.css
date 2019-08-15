@@ -134,3 +134,58 @@ html,
 body {
   height: 100%;
 }
+nav {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+header {
+  border: 1px solid red;
+  height: 50%;
+  width: 100%;
+  background-color: lightgrey;
+}
+header h1 {
+  font-size: 50px;
+}
+header img {
+  width: 40%;
+}
+.Introduction {
+  display: flex;
+  height: 20%;
+  justify-content: space-between;
+}
+.Introduction .Intro {
+  width: 45%;
+}
+.Introduction .Intro h2 {
+  font-size: 40px;
+  padding: 20px 0;
+}
+.Introduction .Skills {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.Introduction .Skills h3 {
+  padding: 20px 0;
+  font-size: 40px;
+}
+.Introduction .Skills .MySkills {
+  border: 0.5x solid black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.Introduction .Skills .MySkills p {
+  border: 0.5px solid black;
+  display: flex;
+  align-content: space-between;
+  height: 100%;
+  font-size: 20px;
+}
