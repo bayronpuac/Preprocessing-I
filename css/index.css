@@ -146,18 +146,19 @@ nav a {
 }
 header {
   background-color: lightsteelblue;
-  display: flex;
+  height: 40%;
 }
-header h1 {
+header .title h1 {
   font-size: 40px;
 }
-header img {
-  width: 40%;
+header .title h1 img {
+  width: 10%;
+  height: 20%;
 }
 .Introduction {
   display: flex;
+  justify-content: space-evenly;
   height: 20%;
-  justify-content: space-between;
 }
 .Introduction .Intro {
   width: 45%;
@@ -176,7 +177,7 @@ header img {
   font-size: 40px;
 }
 .Introduction .Skills .MySkills {
-  border: 0.5x solid black;
+  border: 0.5px solid black;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -187,4 +188,14 @@ header img {
   align-content: space-between;
   height: 100%;
   font-size: 20px;
+}
+.Work h3 {
+  font-size: 40px;
+}
+.Work .WorkHistory {
+  width: 20%;
+}
+.Work .WorkHistory p {
+  font-size: 20px;
+  border: 0.5px solid black;
 }
